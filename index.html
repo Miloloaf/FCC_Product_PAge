@@ -2,17 +2,25 @@
 <html lang="en">
 
     <link href="https://fonts.googleapis.com/css?family=Molle:400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <head>
         <style>
-        #nav-icons{
-            height: 200px;
+        #header-flexbox{
+            height: auto;
             display:flex;
         }
 
-        #fb-logo{
+        #nav-icons-text{            
+            height: auto;
+            display:flex;
+            margin-left:auto;
+        }
+
+        #hitbox-logo{
             font-family: 'Molle', cursive;
             font-size: 60px;
+            margin-right: 3em;
         }
 
         #joystick-logo{
@@ -20,22 +28,51 @@
             width: 60px;
         }
 
+        .nav-text{            
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
         #test-1{
             background-color: red;
         }
 
+        #test-2{
+            background-color: blue;
+            color: white;
+
+        }
+
+        #test-3{
+            background-color: green;
+        }
+
         .nav-box{
-            height: 20px;
+            height: auto;
             width: 20px;
         }
+
+        #ws-menu{
+            width: auto;
+            height: auto;
+        }
+
+
         </style>
     </head>
 
     <header>
-        <div id="nav-icons">
+        <div id="header-flexbox">
             <img id="joystick-logo" src="https://image.flaticon.com/icons/png/512/92/92889.png">
-            <div id="fb-logo" class="nav-box">Hitbox</div>
+            <div id="hitbox-logo" class="nav-box">Hitbox</div>
 
+            <div id="nav-icons-text">
+                <div id="test-1" class="nav-text">Features</div>
+                <div id="test-2" class="nav-text">How it works</div>
+                <div id="test-3" class="nav-text">Pricing</div>
+            </div>
         </div>
 
     </header>
