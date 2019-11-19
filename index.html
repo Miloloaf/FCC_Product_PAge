@@ -93,6 +93,13 @@
             font-size:20x;
             font-weight: 900;
             padding: 0 1em 0 1em;
+            transition-duration: 0.4s;
+            cursor:pointer;
+        }
+
+        input:hover[type="submit"]{
+            background-color: rgb(214, 169, 18);
+            color: white;
         }
 
         iframe{
@@ -131,6 +138,18 @@
             align-items: center;
             justify-items: center;
             align-self: center;
+        }
+
+        .price_grid{
+            display: grid;
+        
+        }
+
+        .price_box{
+            height: 200px;
+            width: 200px;
+            border: #000000 solid 4px;
+            margin: 0 auto 0 auto;
         }
 
         .nav-box{
@@ -195,5 +214,10 @@
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nO1e3t4lsSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+        <div class="price_box">
+            <H2>Test</H2>
+
+        </div>
     </body>
 </html>
