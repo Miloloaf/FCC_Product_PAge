@@ -7,6 +7,11 @@
     <head>
         <style>
 
+        a {
+        color: blue;
+        text-decoration: none; /* no underline */
+        }
+        
         body{
             background-color: rgb(219, 219, 219);
         }
@@ -146,10 +151,34 @@
         }
 
         .price_box{
-            height: 200px;
-            width: 200px;
-            border: #000000 solid 4px;
-            margin: 0 auto 0 auto;
+            height: 300px;
+            width: 300px;
+            border: #292929 solid 2px;
+            margin: 50px auto 0 auto;
+        }
+
+        .price_title{
+            background-color:#969696;
+            margin-top: 0px;
+            margin-left:auto;
+            margin-right: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            color:black
+        }
+
+        .price{
+            margin-top: -10px;
+            margin-left:auto;
+            margin-right: auto;
+            padding-bottom: 10px;
+            text-align: center;
+            color:black
+        }
+
+        .price_text{
+            text-align: center;
         }
 
         .nav-box{
@@ -162,6 +191,27 @@
             height: auto;
         }
 
+        #footer-box{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            padding-bottom:20px;
+            width: 80%;
+            height: 80px;
+            background-color: #969696;
+        }
+
+        #footer-flexbox{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+        }
+        #footer-copyright{
+            text-align: end;
+            margin-top: -35px;
+        }
+
 
         </style>
     </head>
@@ -172,9 +222,9 @@
             <div id="hitbox-logo" class="nav-box">Hitbox</div>
 
             <div id="nav-icons-text">
-                <div class="nav-text">Features</div>
-                <div class="nav-text">How it works</div>
-                <div class="nav-text">Pricing</div>
+                <div class="nav-text"><a href="#Features">Features</a></div>
+                <div class="nav-text"><a href="#HIW">How it works</a></div>
+                <div class="nav-text"><a href="#Pricing">Pricing</a></div>
             </div>
         </div>
 
@@ -186,7 +236,7 @@
     </header>
 
     <body>
-        <div class="container">
+        <div id="Features" class="container">
             <div><img src="https://image.flaticon.com/icons/svg/1496/1496053.svg" id="test-2" class="container-logo"></div> 
             <div id="test-2">
                 <h2>Experience a new way to play</h2>
@@ -211,13 +261,31 @@
                 <h3>We ensure that every purchase has no damage or faults and provide a free set of replaceable buttons.</h3>
             </div>
         </div>
-
+        <div id="HIW" class="central">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nO1e3t4lsSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-
-        <div class="price_box">
-            <H2>Test</H2>
-
+        <div id="Pricing" class="price_box">
+            <H2 class="price_title">Hitbox</H2>
+            <h2 class="price">$300</h2>
+            <div class="price_text">
+                <h3 >Lorem ipsum.</h3>
+                <h3>Lorem ipsum.</h3>
+                <h3>Lorem ipsum dolor.</h3>
+                <h3>Lorem ipsum.</h3>
+                <br>
+            </div>
+            <input type="submit" value="SELECT">
         </div>
     </body>
+    <footer>
+        <div id="footer-box">
+            <div id="footer-flexbox">
+            <div class="nav-text"><a href="">Privacy</a></div>
+            <div class="nav-text"><a href ="">Terms</a></div>
+            <div class="nav-text"><a href="">Contract</a></div>
+            </div>
+            <h3 id="footer-copyright" class="nav-text">Copyright 2019. Hitbox</h3>
+        </div>
+    </footer>
 </html>
