@@ -27,18 +27,18 @@
             margin-left:auto;
         }
 
-        #hitbox-logo{
+        #hitbox-text{
             font-family: 'Molle', cursive;
             font-size: 60px;
             margin-right: 3em;
         }
 
-        #joystick-logo{
+        #header-img{
             height: 60px;
             width: 60px;
         }
 
-        .nav-text{            
+        .nav-link{            
             font-family: 'Open Sans', sans-serif;
             font-size: 16px;
             padding-left: 1em;
@@ -216,23 +216,25 @@
         </style>
     </head>
 
-    <header>
-        <div id="header-flexbox">
-            <img id="joystick-logo" src="https://image.flaticon.com/icons/png/512/92/92889.png">
-            <div id="hitbox-logo" class="nav-box">Hitbox</div>
+    <header id="header">
+        <img id="header-img" src="https://image.flaticon.com/icons/png/512/92/92889.png">
 
+        <div id="header-flexbox">
+            <div id="hitbox-text" class="nav-box">Hitbox</div>
+            <nav id="nav-bar">
             <div id="nav-icons-text">
-                <div class="nav-text"><a href="#Features">Features</a></div>
-                <div class="nav-text"><a href="#HIW">How it works</a></div>
-                <div class="nav-text"><a href="#Pricing">Pricing</a></div>
+                <div class="nav-link"><a href="#Features">Features</a></div>
+                <div class="nav-link"><a href="#video">How it works</a></div>
+                <div class="nav-link"><a href="#Pricing">Pricing</a></div>
             </div>
+            </nav>
         </div>
 
-        <div class="central">
+        <form id="form" class="central" action="https://www.freecodecamp.com/email-submit">
             <h1><strong>The Stickless Arcade Stick</strong></h1>
             <input type="email" placeholder="Enter your email address">
             <input type="submit" value="GET STARTED">
-        </div>
+        </form>
     </header>
 
     <body>
@@ -261,8 +263,8 @@
                 <h3>We ensure that every purchase has no damage or faults and provide a free set of replaceable buttons.</h3>
             </div>
         </div>
-        <div id="HIW" class="central">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nO1e3t4lsSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="video" class="central">
+        <iframe id ="video" width="560" height="315" src="https://www.youtube.com/embed/nO1e3t4lsSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div id="Pricing" class="price_box">
@@ -281,11 +283,11 @@
     <footer>
         <div id="footer-box">
             <div id="footer-flexbox">
-            <div class="nav-text"><a href="">Privacy</a></div>
-            <div class="nav-text"><a href ="">Terms</a></div>
-            <div class="nav-text"><a href="">Contract</a></div>
+            <div class="nav-link"><a href="">Privacy</a></div>
+            <div class="nav-link"><a href ="">Terms</a></div>
+            <div class="nav-link"><a href="">Contract</a></div>
             </div>
-            <h3 id="footer-copyright" class="nav-text">Copyright 2019. Hitbox</h3>
+            <h3 id="footer-copyright" class="nav-link">Copyright 2019. Hitbox</h3>
         </div>
     </footer>
 </html>
